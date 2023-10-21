@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#container {
+  height: 100%;
+  width: 100%;
+  font-size: 0;
+  display: flex;
+  background-color: #2d3250;
+}
+#first,
+#second,
+#third,
+#forth {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: center;
+  font-size: 0;
+  height: 92px;
+}
+#first {
+  width: 118px;
+  font-size: 60px;
+  color: #f8b179;
+  margin-left: 12%;
+  vertical-align: center;
+}
+#second,
+#third,
+#forth {
+  width: 90px;
+  font-size: 30px;
+  color: white;
+  margin-right: 3%;
+  margin-left: 3%;
+  vertical-align: center;
+}
