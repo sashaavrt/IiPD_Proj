@@ -1,12 +1,17 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(fonts/Raleway/Raleway-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
 }
 #container {
-  height: 100%;
+  box-shadow: 0px 7px 50px #161e31;
+  position: fixed;
+  top: 0;
   width: 100%;
-  font-size: 0;
-  display: flex;
+  height: 100px;
   background-color: #2d3250;
 }
 #first,
@@ -14,26 +19,123 @@
 #third,
 #forth {
   display: inline-block;
-  *display: inline;
   zoom: 1;
-  vertical-align: center;
-  font-size: 0;
-  height: 92px;
+  margin-left: 12%;
+  margin-right: 12%;
 }
 #first {
-  width: 118px;
   font-size: 60px;
   color: #f8b179;
-  margin-left: 12%;
-  vertical-align: center;
+  font-family: "Raleway";
+  margin-top: 10px;
+  margin-right: 0;
 }
 #second,
 #third,
 #forth {
-  width: 90px;
   font-size: 30px;
   color: white;
-  margin-right: 3%;
-  margin-left: 3%;
+  font-family: "Raleway";
+  margin-right: auto;
+}
+#footer {
+  box-shadow: 0px -7px 50px #161e31;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #2d3250;
+}
+#first2,
+#second2,
+#third2 {
+  display: inline-block;
+  zoom: 1;
+  font-family: "Raleway";
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+#first2 {
+  width: 110px;
+  font-size: 60px;
+  color: #fff;
+  margin-top: 10px;
+  margin-right: 0;
+}
+#second2,
+#third2 {
+  font-size: 30px;
+  color: white;
+  margin-right: auto;
   vertical-align: center;
+}
+#main {
+  overflow: auto;
+}
+
+#title {
+  margin-left: 12%;
+  color: #fff;
+  font-size: 40px;
+  margin-top: 150px;
+  font-family: "Raleway";
+}
+#text {
+  color: #fff;
+  font-size: 25px;
+  margin-left: 12%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 12%;
+  text-align: justify;
+  font-family: "Raleway";
+}
+#themes {
+  display: flex;
+  flex-flow: column;
+  background-color: #2d3250;
+  width: 600px;
+  border-radius: 3%;
+  padding: 25px;
+  left: 0;
+}
+#select {
+  color: #f8b179;
+  font-size: 25px;
+  font-family: "Raleway";
+  padding-bottom: 15px;
+}
+#subthemes {
+  display: flex;
+  flex-flow: column;
+  background-color: #2d3250;
+  width: 100%;
+  border-radius: 2%;
+  padding: 25px;
+  margin-left: 20px;
+}
+#wind {
+  display: flex;
+  margin-bottom: 150px;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+#subt {
+  color: #f8b179;
+  font-size: 25px;
+  font-family: "Raleway";
+  padding-bottom: 15px;
+}
+
+body {
+  background-color: #161e31;
+  overflow: scroll;
+}
+a {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Raleway";
+  text-decoration: none;
+  padding-bottom: 7px;
 }
