@@ -39,9 +39,8 @@
   margin-right: auto;
 }
 #footer {
-  box-shadow: 0px -7px 50px #161e31;
-  position: fixed;
-  bottom: 0;
+  position: relative;
+  bottom: 0px;
   width: 100%;
   height: 100px;
   background-color: #2d3250;
@@ -55,7 +54,6 @@
   margin-left: 12%;
   margin-right: 12%;
 }
-
 #first2 {
   width: 110px;
   font-size: 60px;
@@ -63,12 +61,12 @@
   margin-top: 10px;
   margin-right: 0;
 }
-#second2,
+
 #third2 {
   font-size: 30px;
   color: white;
-  margin-right: auto;
   vertical-align: center;
+  padding-left: 6%;
 }
 #main {
   overflow: auto;
@@ -91,16 +89,30 @@
   text-align: justify;
   font-family: "Raleway";
 }
+#text1 {
+  color: #fff;
+  font-size: 28px;
+  margin-top: 12px;
+  margin-right: 12%;
+  text-align: justify;
+  font-family: "Raleway";
+}
 #themes {
   display: flex;
   flex-flow: column;
   background-color: #2d3250;
   width: 600px;
-  border-radius: 3%;
+  border-radius: 3px;
   padding: 25px;
   left: 0;
 }
 #select {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Raleway";
+  padding-bottom: 15px;
+}
+#select1 {
   color: #f8b179;
   font-size: 25px;
   font-family: "Raleway";
@@ -111,7 +123,7 @@
   flex-flow: column;
   background-color: #2d3250;
   width: 100%;
-  border-radius: 2%;
+  border-radius: 5px;
   padding: 25px;
   margin-left: 20px;
 }
@@ -127,14 +139,81 @@
   font-family: "Raleway";
   padding-bottom: 15px;
 }
+#section1 {
+  width: 100%;
+  border-radius: 10px;
+}
 
+#lection {
+  width: 1050px;
+  margin-left: 3%;
+  overflow: auto;
+}
+
+#title1 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Raleway";
+}
+
+#wind1 {
+  display: flex;
+  margin-bottom: 120px;
+  margin-top: 150px;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+#themes1 {
+  display: flex;
+  flex-flow: column;
+  background-color: #2d3250;
+
+  height: max-content;
+  border-radius: 3%;
+  padding: 25px;
+  left: 0;
+}
+p {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: justify;
+  font-family: "Raleway";
+}
 body {
   background-color: #161e31;
   overflow: scroll;
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+.content {
+  padding-bottom: 50px;
 }
 a {
   color: #fff;
   font-size: 20px;
+  font-family: "Raleway";
+  text-decoration: none;
+  padding-bottom: 7px;
+}
+#next {
+  margin-top: 15px;
+  height: 50px;
+  width: 300px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f8b179;
+  font-size: 20px;
+  font-family: "Raleway";
+  color: #161e31;
+}
+#act {
+  color: #f8b179;
+  font-size: 25px;
   font-family: "Raleway";
   text-decoration: none;
   padding-bottom: 7px;
