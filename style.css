@@ -7,6 +7,7 @@
   padding: 0;
 }
 #container {
+  z-index: 1;
   box-shadow: 0px 7px 50px #161e31;
   position: fixed;
   top: 0;
@@ -14,6 +15,24 @@
   height: 100px;
   background-color: #2d3250;
 }
+#logo,
+#second,
+#third,
+#forth {
+  display: inline-block;
+  margin-left: 12%;
+  margin-right: 12%;
+  vertical-align: middle;
+}
+#second,
+#third,
+#forth {
+  font-size: 30px;
+  color: white;
+  font-family: "Raleway";
+  margin-right: auto;
+}
+/* #logo,
 #first,
 #second,
 #third,
@@ -37,7 +56,7 @@
   color: white;
   font-family: "Raleway";
   margin-right: auto;
-}
+} */
 #footer {
   position: relative;
   bottom: 0px;
@@ -217,4 +236,108 @@ a {
   font-family: "Raleway";
   text-decoration: none;
   padding-bottom: 7px;
+}
+
+#logo {
+  height: 110px;
+  margin-right: auto;
+  top: 20px;
+}
+form {
+  width: 600px;
+  margin: 0 auto;
+}
+
+#check {
+  font-family: "Raleway";
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 12px;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+fieldset {
+  background: #2d3250;
+  border: none;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+
+#legend {
+  padding-left: 15px;
+  font-size: 22px;
+  color: #fff;
+}
+#submit {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  height: 30px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f8b179;
+  font-size: 16px;
+  font-family: "Raleway";
+  color: #161e31;
+}
+
+#checkbox {
+  margin-top: 20px;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #161e31;
+  border-radius: 3px;
+}
+.c:hover input ~ .checkmark {
+  background-color: #2d3250;
+}
+.c input:checked ~ .checkmark {
+  background-color: #f8b179;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.c input:checked ~ .checkmark:after {
+  display: block;
+}
+.c .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.c {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.c input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
