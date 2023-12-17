@@ -8,8 +8,8 @@
     <div id="container">
       <img id="logo" src="img/Group 6.png" alt="Лого">
      <a href="index.html"id="second">главная</a>
-      <div id="third">лекции</div>
-      <div id="forth">задания</div>
+      <a href="1_lection.html"id="third">лекции</a>
+      <a href="1_task.html"id="forth">задания</a>
     </div>
       <div id="wind1">
       <div id="themes1">
@@ -20,174 +20,259 @@
       <div id="lection">
         <h1 id="title1">Типы данных - проверьте себя!</h1>
         <div id="checkbox">
-        <fieldset>
+        <fieldset id="fieldset-first">
           <p id="legend">Какие из перечисленных типов данных относятся к целочисленным?</p>
           <div id="check">
             <label class="c">
-              <input type="checkbox" />
-              <span class="checkmark"></span>sbyte
+              <input type="checkbox" id="q1a1"/>
+              <span class="checkmark"></span>byte
             </label>
           </div>
           <div id="check">
             <label class="c">
-              <input type="checkbox" />
+              <input type="checkbox" id="q1a2"/>
               <span class="checkmark"></span>float
             </label>
           </div>
           <div id="check">
             <label class="c">
-              <input type="checkbox" />
+              <input type="checkbox" id="q1a3"/>
               <span class="checkmark"></span>char
               </label>
           </div>
           <div id="check">
             <label class="c">
-              <input type="checkbox" />
+              <input type="checkbox" id="q1a4"/>
               <span class="checkmark"></span>bool
             </label>
           </div>
           <div id="check">
             <label class="c">
-              <input type="checkbox" />
-              <span class="checkmark"></span>int
+              <input type="checkbox" id="q1a5"/>
+              <span class="checkmark" ></span>int
             </label>
           </div>
           <div>
-            <button id="submit">Проверить</button>
+            <button id="submit" onclick="onFirstCheck()">Проверить</button>
           </div>
+          <script>
+            function onFirstCheck(){
+              let q1a1 = document.getElementById("q1a1")
+              let q1a2 = document.getElementById("q1a2")
+              let q1a3 = document.getElementById("q1a3")
+              let q1a4 = document.getElementById("q1a4")
+              let q1a5 = document.getElementById("q1a5")
+              if(q1a1.checked == true 
+              && q1a2.checked == false
+              && q1a3.checked == false
+              && q1a4.checked == false
+              && q1a5.checked == true){
+                alert("Вы ответили правильно!")
+                }else{
+                  alert("Ответ неверный или не все пункты выбраны!")
+                }
+            }
+            
+          </script>
         </fieldset>
         <fieldset>
           <p id="legend">К какому типу данных из перечисленных относится тип с плавающей запятой?</p>
           <div id="check">
             <label class="c">
-              <input type="checkbox"  />
+              <input type="checkbox" id="q2a1" />
               <span class="checkmark"></span>int
             </label>
           </div>
           <div id="check">
             <label class="c">
-              <input type="checkbox"/>
+              <input type="checkbox" id="q2a2"/>
               <span class="checkmark"></span>double
             </label>
           </div>
           <div id="check">
             <label class="c">
-              <input type="checkbox" />
+              <input type="checkbox" id="q2a3"/>
               <span class="checkmark"></span>long
             </label>
           </div>
           <div id="check">
             <label class="c">
-              <input type="checkbox" />
+              <input type="checkbox" id="q2a4"/>
               <span class="checkmark"></span>short
             </label>
           </div>
           <div id="check">
             <label class="c">
-              <input type="checkbox" />
+              <input type="checkbox" id="q2a5"/>
               <span class="checkmark"></span>float
             </label>
           </div>
           
           <div>
-            <button id="submit">Проверить</button>
+            <button id="submit" onclick="onSecondCheck()">Проверить</button>
+            <script>
+              function onSecondCheck(){
+                let q2a1 = document.getElementById("q2a1")
+                let q2a2 = document.getElementById("q2a2")
+                let q2a3 = document.getElementById("q2a3")
+                let q2a4 = document.getElementById("q2a4")
+                let q2a5 = document.getElementById("q2a5")
+                if(q2a1.checked == false 
+                && q2a2.checked == true
+                && q2a3.checked == false
+                && q2a4.checked == false
+                && q2a5.checked == true){
+                  alert("Вы ответили правильно!")
+                }else{
+                  alert("Ответ неверный или не все пункты выбраны!")
+                }
+              }
+              
+            </script>
           </div>
         </fieldset>
         <fieldset>
           <p id="legend">Какой из перечисленных типов является десятичным?</p>
           <div id="check">
               <label class="c">
-                <input type="checkbox" />
+                <input type="checkbox" id="q3a1"/>
                 <span class="checkmark"></span>int
               </label>
             </div>    
           <div id="check">
             <label class="c">
-              <input type="checkbox" />
+              <input type="checkbox" id="q3a2"/>
               <span class="checkmark"></span>decimal
             </label>
           </div>
           <div id="check">
             <label class="c">
-              <input type="checkbox" />
+              <input type="checkbox" id="q3a3"/>
               <span class="checkmark"></span>long
             </label>
           </div>
           <div id="check">
             <label class="c">
-              <input type="checkbox"  />
+              <input type="checkbox" id="q3a4" />
               <span class="checkmark"></span>sbyte
             </label>
           </div>
-        
-          
+
           <div>
-            <button id="submit">Проверить</button>
+            <button id="submit" onclick="onThirdCheck()">Проверить</button>
+            <script>
+              function onThirdCheck(){
+                let q3a1 = document.getElementById("q3a1")
+                let q3a2 = document.getElementById("q3a2")
+                let q3a3 = document.getElementById("q3a3")
+                let q3a4 = document.getElementById("q3a4")
+                if(q3a1.checked == false 
+                && q3a2.checked == true
+                && q3a3.checked == false
+                && q3a4.checked == false){
+                  alert("Вы ответили правильно!")
+                }else{
+                  alert("Ответ неверный или не все пункты выбраны!")
+                }
+                }
+            </script>
           </div>
         </fieldset>
         <fieldset>
           <p id="legend">Выберите символьный тип данных</p>
           <div id="check">
             <label class="c">
-              <input type="checkbox"  />
+              <input type="checkbox" id="q4a1" />
               <span class="checkmark"></span>bool
             </label>
           </div>
           <div id="check">
             <label class="c">
-              <input type="checkbox" />
+              <input type="checkbox" id="q4a2" />
               <span class="checkmark"></span>ulong
             </label>
           </div>
           <div id="check">
             <label class="c">
-              <input type="checkbox" />
+              <input type="checkbox" id="q4a3"/>
               <span class="checkmark"></span>ushot
             </label>
           </div>
           <div id="check">
             <label class="c">
-              <input type="checkbox"/>
+              <input type="checkbox" id="q4a4"/>
               <span class="checkmark"></span>char
             </label>
           </div>
           <div>
-            <button id="submit">Проверить</button>
+            <button id="submit" onclick="onFourthCheck()">Проверить</button>
+            <script>
+              function onFourthCheck(){
+                let q4a1 = document.getElementById("q4a1")
+                let q4a2 = document.getElementById("q4a2")
+                let q4a3 = document.getElementById("q4a3")
+                let q4a4 = document.getElementById("q4a4")
+                if(q4a1.checked == false 
+                && q4a2.checked == false
+                && q4a3.checked == false
+                && q4a4.checked == true){
+                  alert("Вы ответили правильно!")
+                }else{
+                  alert("Ответ неверный или не все пункты выбраны!")
+                }
+                }
+            </script>
           </div>
         </fieldset>
         <fieldset>
           <p id="legend">Выберите логический тип данных</p>
           <div id="check">
             <label class="c">
-              <input type="checkbox" />
+              <input type="checkbox" id="q5a1"/>
               <span class="checkmark"></span>int
             </label>
           </div>
           <div id="check">
             <label class="c">
-              <input type="checkbox" />
+              <input type="checkbox" id="q5a2"/>
               <span class="checkmark"></span>char
             </label>
           </div>
           <div id="check">
             <label class="c">
-              <input type="checkbox" />
+              <input type="checkbox" id="q5a3"/>
               <span class="checkmark"></span>bool
             </label>
           </div>
           <div id="check">
             <label class="c">
-              <input type="checkbox"/>
+              <input type="checkbox" id="q5a4"/>
               <span class="checkmark"></span>sbyte
             </label>
           </div>
           
           <div>
-            <button id="submit">Проверить</button>
+            <button id="submit" onclick="onFifthCheck()">Проверить</button>
+            <script>
+              function onFifthCheck(){
+                let q5a1 = document.getElementById("q5a1")
+                let q5a2 = document.getElementById("q5a2")
+                let q5a3 = document.getElementById("q5a3")
+                let q5a4 = document.getElementById("q5a4")
+                if(q5a1.checked == false 
+                && q5a2.checked == false
+                && q5a3.checked == true
+                && q5a4.checked == false){
+                  alert("Вы ответили правильно!")
+                }else{
+                  alert("Ответ неверный или не все пункты выбраны!")
+                }
+                }
+            </script>
           </div>
         </fieldset>
       </div>
-        <button id="next" onclick=>Следующая лекция -></button>
+        <button id="next" onclick="window.location.href = '2_lection.html'">Следующая лекция -> </button>
     </div>
     
   </div>
